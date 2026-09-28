@@ -1,0 +1,83 @@
+/**
+ * Design tokens — network packet lab + cool HTML blueprint notebook.
+ * See DESIGN.md.
+ */
+
+:root {
+  --void: #0b1219;
+  --surface: #13202b;
+  --surface-2: #1a2c3a;
+  --paper: #e7ebe8;
+  --paper-2: #d5dad6;
+  --ink: #0f1518;
+  --chalk: #c7d0d8;
+  --chalk-dim: #7d8b96;
+  --wire: #3db8ff;
+  --wire-dim: #1d6f9c;
+  --amber: #f0b429;
+  --amber-dim: #8a6a1c;
+  --alarm: #e23d51;
+  --calm: #2a9d8f;
+  --tag: #9b7ede;
+  --attr: #e8a87c;
+
+  --font-display: "Newsreader", "Iowan Old Style", "Palatino Linotype", serif;
+  --font-ui: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", "Cascadia Code", "Consolas", monospace;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+
+  --rail: 220px;
+  --chrome: 48px;
+  --dock: 140px;
+
+  --focus: 0 0 0 2px var(--void), 0 0 0 4px var(--wire);
+  --line: #243545;
+  --line-2: #2c4254;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background: var(--void);
+  color: var(--chalk);
+  font-family: var(--font-ui);
+  font-size: 14px;
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+}
+
+#app {
+  height: 100%;
+  min-height: 100%;
+}
+
+button,
+input {
+  font: inherit;
+  color: inherit;
+}
+
+button:focus-visible,
+input:focus-visible,
+a:focus-visible {
+  outline: none;
+  box-shadow: var(--focus);
+}
+
+code,
+.mono {
+  font-family: var(--font-mono);
+}
